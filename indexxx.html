@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Книжный магазин">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+        }
+        .search-form {
+            margin-top: 10px;
+        }
+        .search-form input, .search-form button {
+            padding: 5px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        article {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        article img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .price {
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        .promo {
+            background: #f4f4f4;
+            padding: 15px;
+            margin-top: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #ffd700;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Книжный мир</div>
+        <nav>
+            <a href="https://yandex.ru">Главная</a>
+            <a href="https://yandex.ru">Каталог</a>
+            <a href="https://yandex.ru">О нас</a>
+            <a href="https://yandex.ru">Контакты</a>
+            <a href="https://yandex.ru">Корзина</a>
+        </nav>
+        <div class="search-form">
+            <form action="#">
+                <input type="text" placeholder="Поиск книг">
+                <button type="submit">Найти</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <h1>Добро пожаловать в Книжный мир!</h1>
+        <p>Лучшие книги по доступным ценам.</p>
+
+        <section>
+            <h2>Популярные книги</h2>
+            <div class="product-grid">
+                <article>
+                    <img src="https://content.img-gorod.ru/pim/products/images/a7/df/0199e95c-3134-7a88-b534-097c3aeba7df.jpg" alt="Книга">
+                    <b>Мастер и Маргарита</b>
+                    <i>М. Булгаков</i>
+                    <div class="price">450 ₽</div>
+                    <button>В корзину</button>
+                </article>
+                <article>
+                    <img src="https://cdn.eksmo.ru/v2/ITD000000001153897/COVER/cover1__w820.jpg" alt="Книга">
+                    <b>1984</b>
+                    <i>Дж. Оруэлл</i>
+                    <div class="price">520 ₽</div>
+                    <button>В корзину</button>
+                </article>
+                <article>
+                    <img src="https://imo10.labirint.ru/books/424618/cover.jpg/242-0" alt="Книга">
+                    <b>Гарри Поттер</b>
+                    <i>Дж. Роулинг</i>
+                    <div class="price">680 ₽</div>
+                    <button>В корзину</button>
+                </article>
+                <article>
+                    <img src="https://content.img-gorod.ru/pim/products/images/10/1d/0190e2dd-e926-7325-adda-3ffaf15e101d.jpg" alt="Книга">
+                    <b>Три товарища</b>
+                    <i>Э. Ремарк</i>
+                    <div class="price">490 ₽</div>
+                    <button>В корзину</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="promo">
+            <h3>Акция!</h3>
+            <p>Купи две книги — третья в подарок.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Книжный мир. Все права защищены.</p>
+        <p>Телефон: +7 (777) 777-77-77 | Email: info@knigi.ru</p>
+        <div class="social-links">
+            <a href="https://yandex.ru">VK</a> | <a href="https://yandex.ru">Telegram</a> 
+        </div>
+    </footer>
+</body>
+</html>
